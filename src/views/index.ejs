@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include("partials/head") %>
+    </head>
+
+    <body>
+        <%- include("partials/navbar") %>
+
+        <section class="welcome-section">
+            <div class="welcome-text">
+                <span class="company-name"
+                    >¡Bienvenidos a Integra<span style="color: rgb(126, 73, 73)"
+                        >Kids!</span
+                    ></span
+                >
+                <p>
+                    Aquí encontrarás todo lo que necesitas para asegurarte de
+                    que tus hijos tengan el apoyo y la atención que merecen como
+                    así también un lugar donde podras ofrecer tus servicios
+                    profesionales.<br /><br />
+                    Además, te ofrecemos información detallada sobre centros y
+                    consultorios terapéuticos, así como documentos útiles con
+                    información relevante. Nuestra plataforma también cuenta con
+                    recursos educativos que te ayudarán a potenciar el
+                    aprendizaje de tus hijos y mantenerlos motivados.<br /><br />
+                    Pero eso no es todo, también encontrarás información sobre
+                    charlas y talleres relacionados con la educación y el
+                    desarrollo infantil. Además, nuestro blog de noticias te
+                    mantendrá actualizado sobre temas relevantes y novedades en
+                    el ámbito educativo. Un foro para que puedas interactuar con
+                    otros padres y profesionales, crear preguntas, intercambiar
+                    experiencias y obtener respuestas de personas con intereses
+                    similares.<br /><br />
+                    ¡Únete a nuestra comunidad y descubre todas las
+                    posibilidades que tenemos para ti y tu familia!
+                </p>
+                <form action="loginRegistro">
+                    <button class="ingresar-button">
+                        <strong>Ingresar</strong>
+                    </button>
+                </form>
+            </div>
+            <div class="welcome-image">
+                <img src="/images/logoIntegraKids.png" alt="logoIntegraKids" />
+            </div>
+        </section>
+        <footer><%- include("partials/footer") %></footer>
+    </body>
+</html>

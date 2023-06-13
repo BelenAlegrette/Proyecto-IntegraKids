@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include("partials/head") %>
+    </head>
+
+    <body>
+        <%- include("partials/navbar") %>
+
+        <div class="form-container">
+            <div class="form-content">
+                <div class="form-header">
+                    <button class="form-button"><strong>PADRES</strong></button>
+                    <button class="form-button">
+                        <strong>PROFESIONALES</strong>
+                    </button>
+                </div>
+                <form action="#" method="post" class="formulario"></form>
+                    <input
+                        type="text"
+                        class="input-spacing"
+                        placeholder="Apellido y nombre"
+                        required
+                    />
+                    <input
+                        type="text"
+                        class="input-spacing"
+                        placeholder="Nombre de usuario"
+                        required
+                    />
+                    <input
+                        type="email"
+                        class="input-spacing"
+                        placeholder="Email"
+                        required
+                    />
+                    <input
+                        type="text"
+                        class="input-spacing"
+                        placeholder="Ciudad"
+                        required
+                    />
+                    <input
+                        type="password"
+                        class="input-spacing"
+                        placeholder="Contraseña"
+                        required
+                    />
+                    <input
+                        type="password"
+                        class="input-spacing"
+                        placeholder="Repetir Contraseña"
+                        required
+                    />
+                    <div class="upload-container">
+                        <label for="photo"><strong>Cargar foto</strong></label>
+                        <input type="file" id="photo" />
+                    </div>
+                    <div class="terms-container">
+                        <input type="checkbox" id="terms" required />
+                        <label for="terms"
+                            >He leído los términos y condiciones de uso</label
+                        >
+                    </div>
+                    <button class="button-padres" type="submit">
+                        <strong>INGRESAR</strong>
+                    </button>
+                </form>
+            </div>
+            <div class="image-container">
+                <img src="/images/logoIntegraKids.png" alt="Imagen" style="width: 180%; height: auto" />
+            </div>
+        </div>
+        <footer><%- include("partials/footer") %></footer>
+    </body>
+</html>
